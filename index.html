@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="headerText">
+        <h1>✨ Image Gallery</h1>
+        <p class="subtitle"> Explore Images in a Clean , Creative layout.</p>
+        <div class="searchBox">
+            <input id="searchInput" type="search" placeholder="Search beaches, temples..." />
+            <button id="searchBtn">Search</button>
+        </div>
+
+    </div>
+
+    <!-- Filter Buttons -->
+    <div class="filterButtons">
+        <button class="filter-btn active" data-filter="all">All Sections</button>
+        <button class="filter-btn" data-filter="beaches">Beaches</button>
+        <button class="filter-btn" data-filter="temples">Temples</button>
+        <button class="filter-btn" data-filter="wonders">Wonders</button>
+        <button class="filter-btn" data-filter="cities">Cities</button>
+    </div>
+
+    <!-- Lightbox -->
+    <div class="fullImageClass" id="fullImageBox">
+        <button class="nav-btn prev-btn" id="prevBtn">❮</button>
+        <div class="lightbox-wrapper">
+            <div class="lightbox-content">
+                <span id="crossIcon">✕</span>
+                <img src="" alt="" id="fullImage">
+            </div>
+            <div class="lightbox-footer">
+                <div class="lightbox-caption" id="lightboxCaption"></div>
+                <div class="lightbox-actions">
+                    <a id="downloadBtn" class="download-btn" download="gallery-image.jpg">Download</a>
+                </div>
+            </div>
+        </div>
+        <button class="nav-btn next-btn" id="nextBtn">❯</button>
+    </div>
+
+    <div id="messageBox" class="message-box"></div>
+
+    <!-- Gallery Container -->
+    <div class="imageGallery" id="imageGallery"></div>
+    <div class="load-more-container">
+        <button id="loadMoreBtn" class="load-more-btn">Load More</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
