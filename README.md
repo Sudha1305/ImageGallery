@@ -55,6 +55,3 @@ python -m http.server 8000
 - Safari (latest)
 - Edge (latest)
 
-## License
-
-MIT
