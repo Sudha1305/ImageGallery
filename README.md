@@ -20,18 +20,6 @@ A beautiful, modern image gallery featuring travel photography from around the w
 - JavaScript (ES6+)
 - Bootstrap 5
 
-## Getting Started
-
-1. Clone or download this repository
-2. Open `index.html` in a web browser
-3. Or start a local server for best experience:
-
-```bash
-# Python
-python -m http.server 8000
-
-# Then visit http://localhost:8000
-```
 
 ## Project Structure
 
